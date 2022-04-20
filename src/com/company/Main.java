@@ -13,7 +13,7 @@ public class Main {
     callGenerator generator = new callGenerator();
     int n = 10000;
     int arrivalTime = 2000;
-    generator.generator(n,arrivalTime,max);
+    //generator.generator(n,arrivalTime,max);
     ArrayList<Call> calls = generator.reader();
     String main = "Liczba błedów strony dla n = " + n + ", czas pracy = " + arrivalTime + ", wielkość pamięci fizycznej = " + max + ", dla : ";
         System.out.println(main);
@@ -36,12 +36,12 @@ public class Main {
 
         AproxLRU alru = new AproxLRU();
         int[] alruTab = alru.alruAlgo(calls);
-        String alruString = "\nOPT z 3 ramkami : " + alruTab[0] + "\n     z 7 ramkami : " + alruTab[1] + "\n     z 10 ramkami : " + alruTab[2] + "\n     z 100 ramkami : " + alruTab[3];
+        String alruString = "\nALRU z 3 ramkami : " + alruTab[0] + "\n     z 7 ramkami : " + alruTab[1] + "\n     z 10 ramkami : " + alruTab[2] + "\n     z 100 ramkami : " + alruTab[3];
         System.out.println(alruString);
 
         RAND rand = new RAND();
         int[] randTab = rand.randAlgo(calls);
-        String randString = "\nOPT z 3 ramkami : " + randTab[0] + "\n     z 7 ramkami : " + randTab[1] + "\n     z 10 ramkami : " + randTab[2] + "\n     z 100 ramkami : " + randTab[3];
+        String randString = "\nRAND z 3 ramkami : " + randTab[0] + "\n     z 7 ramkami : " + randTab[1] + "\n     z 10 ramkami : " + randTab[2] + "\n     z 100 ramkami : " + randTab[3];
         System.out.println(randString);
 
     Zapis zapis = new Zapis();

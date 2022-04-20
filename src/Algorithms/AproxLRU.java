@@ -26,13 +26,17 @@ public class AproxLRU {
                 return 0;
             }
         }
+        boolean isDdone = false;
         if (tab.size() >= size) {
-            for(int i = 0;i< tab.size();i++){
-                if (tab.get(i).getLicznik() == 1){
-                    tab.get(i).setLicznik(0);
-                }else {
-                    tab.remove(i);
-                    break;
+            while (!isDdone) {
+                for (int i = 0; i < tab.size(); i++) {
+                    if (tab.get(i).getLicznik() == 1) {
+                        tab.get(i).setLicznik(0);
+                    } else {
+                        tab.remove(i);
+                        isDdone=true;
+                        break;
+                    }
                 }
             }
         }
