@@ -1,0 +1,27 @@
+Liczba błedów strony dla n = 10000, czas pracy = 2000, wielkość pamięci fizycznej = 180, dla : 
+
+FIFO z 3 ramkami : 9841
+     z 7 ramkami : 9624
+     z 10 ramkami : 9453
+     z 100 ramkami : 4519
+
+OPT z 3 ramkami : 9022
+     z 7 ramkami : 8029
+     z 10 ramkami : 7513
+     z 100 ramkami : 1910
+
+LRU z 3 ramkami : 9840
+     z 7 ramkami : 9625
+     z 10 ramkami : 9449
+     z 100 ramkami : 4568
+
+OPT z 3 ramkami : 7257
+     z 7 ramkami : 7285
+     z 10 ramkami : 7302
+     z 100 ramkami : 4549
+
+OPT z 3 ramkami : 9839
+     z 7 ramkami : 9644
+     z 10 ramkami : 9475
+     z 100 ramkami : 4406
+
